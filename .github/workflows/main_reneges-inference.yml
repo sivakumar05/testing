@@ -71,21 +71,21 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
-      - name: Download artifact from build job
+       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
           name: python-app
           path: .
 
-      - name: 'Deploy to Azure Web App'
+       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         
-        - uses: azure/login@v1
-      with:
+       - uses: azure/login@v1
+        with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
         environment: 'AzureStack'
 
-    - run: 
+       - run: 
         az webapp list --query "[?state=='Running']"
         
        - uses: azure/webapps-deploy@v2
