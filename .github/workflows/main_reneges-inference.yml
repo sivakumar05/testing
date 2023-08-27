@@ -1,25 +1,4 @@
-Skip to content
-sivakumar05
-/
-testing
 
-Type / to search
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Build and deploy Python app to Azure Web App
-Build and deploy Python app to Azure Web App #3
-Jobs
-Run details
-Workflow file for this run
-.github/workflows/main_reneges-inference.yml at 024c2e9
 # This workflow will build and push a Python application to an Azure Web App when a commit is pushed to your default branch.
 #
 # This workflow assumes you have already created the target Azure App Service web app.
